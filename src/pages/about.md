@@ -7,21 +7,22 @@ path: "/about"
 
 I guess this is the part where I start speaking about myself.
 
-TL;DR:
+#### TL;DR
 
 - 24 year old software developer
-- I've got a couple years of experience
-- 
+- 6'11"
+- Passionate about coding, creating content and helping others grow
+- Experience in React, Flutter, Angular, Ionic & .Net Core
 
-We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
+#### Long Story
 
-This starter is pretty basic and covers all of the essentials. All you have to do is start typing!
 
-The starter includes:
+#### Seek me out
 
-- **light/dark mode**, depending on your preferences
-- great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
-- nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
-- responsive youtube/vimeo etc. videos thanks to [**gatsby-remark-embed-video**](https://github.com/borgfriend/gatsby-remark-embed-video)
+You can find my all over the place but here are my relevant profiles:
 
-So, there you have it... enjoy!
+- [GitHub](https://github.com/askharley)
+- [CodeSandBox](https://codesandbox.io/u/askharley)
+- [Twitter](https://twitter.com/askharleyio)
+- [LinkedIn](https://www.linkedin.com/in/harley-ferguson-433243116/)
+
