@@ -1,13 +1,17 @@
 ---
 title: "About"
-date: "2018-07-19"
-author: "Radek"
+date: "2020-04-04"
+author: "Harley"
 path: "/about"
 ---
 
-## Hi there
+I guess this is the part where I start speaking about myself.
 
-My name is Radek and I'm the author of this starter. I made it to help you present your ideas easier.
+TL;DR:
+
+- 24 year old software developer
+- I've got a couple years of experience
+- 
 
 We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
 
