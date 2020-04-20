@@ -12,10 +12,16 @@ const Footer = ({ copyrights }) => (
     ) : (
       <>
         <span className="footerCopyrights">
-          © 2020 Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © 2020 Harley Ferguson
         </span>
         <span className="footerCopyrights">
-          <a href="https://www.gatsbyjs.org/starters/panr/gatsby-starter-hello-friend/">gatsby-hello-friend-starter</a>
+          <a href="https://github.com/askharley/">GitHub</a>
+        </span>
+        <span className="footerCopyrights">
+          <a href="https://twitter.com/askharleyio">Twitter</a>
+        </span>
+        <span className="footerCopyrights">
+          <a href="https://codesandbox.io/u/askharley">CodeSandBox</a>
         </span>
       </>
     )}
