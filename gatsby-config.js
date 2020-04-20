@@ -25,14 +25,14 @@ module.exports = {
         title: 'About',
         path: '/about',
       },
-      {
-        title: 'Showcase',
-        path: '/showcase',
-      },
-      {
-        title: 'Example',
-        path: '/example',
-      },
+      // {
+      //   title: 'Showcase',
+      //   path: '/showcase',
+      // },
+      // {
+      //   title: 'Example',
+      //   path: '/example',
+      // },
     ],
   },
   plugins: [
