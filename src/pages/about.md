@@ -5,7 +5,7 @@ author: "Harley"
 path: "/about"
 ---
 
-Hi there. I guess this is where I tell you about myself and why you should spend your time reading my ramblings on what software is and how to right it.
+Hi there. I guess this is where I tell you about myself and why you should spend your time reading my posts on what software is and how to write it.
 
 I'm a 24 year old coder. Born and raised in Cape Town. When I'm not coding I'm probably playing tug-of-war with my Golden Retriever.
 
@@ -37,4 +37,4 @@ Okay so my lovely paragraph above didn't convince you, eh? You want some credent
 
 None of this makes me a good developer. Having studied and gotten a degree doesn't mean I'll always write the cleanest code. Working with multiple frontend stacks doesn't mean I always remember the proper syntax for a `switch` case. Having worked with dozens of other developers across different teams doesn't mean that I'll always be the best person to help you.
 
-My focus is to constantly learn and improve. If that's something that resonates with you then please give this project a go and let's help each other build cool stuff.
+My focus is to constantly learn and improve. If that's something that resonates with you then please give this blog a go and let's help each other build cool stuff.
