@@ -1,5 +1,5 @@
 ---
-title: "A reintroduction to ECMAScript 6"
+title: "A Reintroduction to ECMAScript 6"
 date: "2020-04-20"
 path: "/a-reintroduction-to-ecmascript-6"
 coverImage: "../images/01-a-reintroduction-to-ecmascript-6.jpg"
@@ -238,6 +238,7 @@ numbers = [1, 2, 3];
 sum = (a, b, c) => a + b + c;
 total = sum(...numbers);
 console.log(total);
+// --> 6
 ```
 
 The spread operator can also be use effectively when copying parts of objects.
@@ -255,7 +256,9 @@ newPerson = {
 }
 
 console.log(originalPerson);
+// --> {name: "Billy", surname: "Joel", age: 70}
 console.log(newPerson);
+// --> {name: "Billy", surname: "Eilish", age: 17}
 ```
 
 The spread will overwrite whatever properties are specifided but otherwise take all of the properties as they exist on the original object.
