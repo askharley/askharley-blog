@@ -40,7 +40,7 @@ console.log(name);
 // --> Han
 ```
 
-Both `let` and `const` make us of block scoping which we'll speak more about now.
+Both `let` and `const` make use of block scoping which we'll speak more about now.
 
 ---
 
