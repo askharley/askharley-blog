@@ -10,7 +10,7 @@ tags: ["programming paradigms"]
 
 <sub><sup>Photo by Émile Perron on Unsplash.</sub></sup>
 
-The term 'declarative programming' has regained popularity with the introduction of React. But what exactly is it and how does it compare to imperative programming?
+The term 'declarative programming' has regained popularity in the recent years. But what exactly is it and how does it compare to imperative programming?
 
 Wikipedia defines imperative programming as:
 >  A programming paradigm that uses statements that change a program's state. An imperative programing consists of commands for the computer to perform.
@@ -45,7 +45,7 @@ This means that declarative programming is generally simpler to code because it'
 
 ---
 
-Some examples using common languages:
+You may have been writing declaratively without even knowing it:
 
 #### SQL
 
@@ -90,11 +90,8 @@ Okay so why has "declarative" programming become more popular in recent years? W
 
 React has heavily promoted itself as declarative. The reason for this is because alternative frameworks (like Angular) or libraries (like jQuery) are imperative. This may leave you wanting a code example but the difference between React and Angular is a blog post on it's own.
 
-As we've seen, imperative programming can require the developer to be far more explicit and have to cater for more potential situations. Writing declarative code means that you have faith in your chosen tools and frameworks so that you don't have to write low level code.
-
 Writing less code with regards to your UI rendering does come at a cost in React though. You're going to need to now understand state and how to manage it so that you can effectively render your UI.
 
-Some people don't want to make the trade off so they'll stick with frameworks or styles that are imperative. I, on the other hand, love the concept of separating out our state into it's own portion of code that aids the UI to figure out how it needs to look without us explicitly having to tell it.
+---
 
-It's a greater seperation of concerns in my mind at least.
-
+Hopefully now you have an idea on what these concepts are so the next time some hot shot coder is throwing around terms like "paradigm" and "declarative programming", you can ask them how their robot butler is doing.
