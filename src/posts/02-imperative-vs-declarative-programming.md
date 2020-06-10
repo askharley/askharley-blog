@@ -5,7 +5,7 @@ path: "/imperative-vs-declarative-programming"
 coverImage: "../images/02-imperative-vs-declarative-programming.jpg"
 author: "Harley Ferguson"
 excerpt: "The term 'declarative programming' has regained popularity with the introduction of React. But what exactly is it and how does it compare to imperative programming?"
-tags: ["programming paradigms"]
+tags: ["programming-paradigms"]
 ---
 
 <sub><sup>Photo by Émile Perron on Unsplash.</sub></sup>
