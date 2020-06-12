@@ -8,9 +8,9 @@ excerpt: "If you're a React youngling, you would have heard the term 'redux' flu
 tags: ["redux", "react", "state-management"]
 ---
 
-<sub><sup>Photo by Mathew Schwartz on Unsplash.</sub></sup>
+<sub><sup>Photo by Austin Chan on Unsplash.</sup></sub>
 
-You've seen Redux mentioned in nearly every article you've read. Terms like actions, reducers and store keep cluttering your understanding. Let's break down what Redux is from a top-down approach and then look at some code.
+You've seen Redux mentioned in nearly every "Getting Started with React" article you've read. Terms like actions, reducers and store keep cluttering your understanding. Let's break down what Redux is from a top-down approach and then look at some code.
 
 ---
 
@@ -36,7 +36,7 @@ Hell no. Redux is one of the oldest and most popular forms of state management i
 
 ### How does Redux work?
 
-Redux was created by Dan Abramov and Andrew Clark in 2015. They decided to build off of [Flux](https://facebook.github.io/flux/) and implement some of it's key concepts which is a unidirectional data flow pattern.
+Redux was created by Dan Abramov and Andrew Clark in 2015. They decided to build off of [Flux](https://facebook.github.io/flux/) and implement some of it's key concepts like a unidirectional data flow pattern.
 
 Flux and Redux's data flow looks like this:
 
@@ -44,7 +44,7 @@ Flux and Redux's data flow looks like this:
 
 ### Actions
 
-Actions are payloads of information that are dispatched and sent to the store. Dispatching an action is the only way to manipulate the store.
+Actions are payloads of information that are dispatched to the store. Dispatching an action is the only way to manipulate the store.
 
 ```js
 // example action
@@ -58,7 +58,7 @@ Actions are payloads of information that are dispatched and sent to the store. D
 
 Actions follow the general model of a [FSA (Flux Standard Action)](https://github.com/redux-utilities/flux-standard-action) which is a human-friendly model that allows us to more easily reason with actions.
 
-**Note:** It's suggested that the `type` is a `string` constant and if your app's scale is increasing, then you move those constants into their own module. This avoids using string literals and potentially having a typo between the `type` value in your action and then `type` value we'll perform a switch on in our reducer. For our example, we'll just use a string literaly.
+**Note:** It's suggested that the `type` is a `string` constant and if your app's scale is increasing, then you move those constants into their own module. This avoids using string literals and potentially having a typo between the `type` value in your action and then `type` value we'll perform a switch on in our reducer. For this demonstration, we'll just use a string literal for simplicty's sake.
 
 
 ### Action Creators
@@ -72,7 +72,7 @@ const actionCreators = {
 }
 ```
 
-This provides us with an object that has a function property called `newItem`. If we provide that object with a `data` value of say "Chocolate", it'll produce an action like the one we saw in the example.
+This provides us with an object that has a function property called `newItem`. If we provide that object with a `data` value of say "Chocolate", it'll produce an action like the one we saw in initial example of an action object.
 
 ### Dispatcher
 
@@ -80,7 +80,7 @@ The dispatcher's job is to simply dispatch actions. The reducer will listen out 
 
 Before the React Hooks era, you could make use of `store.dispatch()` to dispatch your actions for you.
 
-With React Hooks, you can write a line like this:
+With React Hooks, you can write an implementation like this:
 
 ```js
 import { dispatch } from 'react-redux';
@@ -91,9 +91,9 @@ Then just wrap any action or action creator method in `dispatch()`.
 
 ### Reducers
 
-Reducers are functions that specify how are state must change in response to each action. Action objects are only telling us which action happend and provide any relevant data. It's the reducer's job to actually change the state.
+Reducers are functions that specify how are state must change in response to each action. Action objects are only telling us which action happened and provide any relevant data. It's the reducer's job to actually build the new state.
 
-To build off of our current example use case:
+To build off of our current example:
 
 ```js
 const initialState = {
@@ -115,10 +115,10 @@ function itemReducer(state = initialState, action) {
 
 1. We've created our `initialState` object that just has a property of `items` which is an empty array to begin with.
 2. We've defined a reducer that takes in two arguments, `state` and `action`.
-3. The `state` represents the current state of when this reducer is being called and is provided an initial value thanks to our `initialState` variable.
+3. The `state` represents the current state and is provided an initial value thanks to our `initialState` variable.
 4. `action` is the action that has just been dispatched to the reducer.
 5. We perform a standard switch case on the `action.type` to see if it's match.
-6. Making use of spread operator in ES6 (check [this](https://askharley-blog.netlify.app/a-reintroduction-to-ecmascript-6) out if you're unfamiliar), we return a new state object that has the payload value from the `action` appending to our list array.
+6. Making use of spread operator in ES6 (check [this](https://askharley-blog.netlify.app/a-reintroduction-to-ecmascript-6) out if you're unfamiliar with ES6 awesomeness), we return a new state object that has the payload value from the `action` appending to our list array.
 
 ---
 

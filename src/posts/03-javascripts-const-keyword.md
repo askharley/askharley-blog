@@ -8,7 +8,7 @@ excerpt: "JavaScript's introduction of the const keyword in ES6 is amazing but h
 tags: ["ecmascript6", "javascript"]
 ---
 
-<sub><sup>Photo by Martin Adams on Unsplash.</sub></sup>
+<sub><sup>Photo by Bernard Hermant on Unsplash. It's planks of wood. Because of Planck's constant. Get it. Not a physics fans, huh? </sub></sup>
 
 JavaScript's introduction of the const keyword in ES6 is amazing but has some hidden passages that you may not be aware of.
 

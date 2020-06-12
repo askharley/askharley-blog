@@ -8,7 +8,7 @@ excerpt: "ES6 may be nearly 5 years old but I still see tons of code that isn't 
 tags: ["ecmascript6", "javascript"]
 ---
 
-<sub><sup>Photo by Aron Visuals on Unsplash.</sup></sub>
+<sub><sup>Photo by Adam Solomon on Unsplash.</sup></sub>
 
 ES6 may be nearly 5 years old but I still see tons of code that isn't making use of the full ES6 awesomeness. Let's have a quick reintroduction so we can start writing nicer code again.
 
@@ -231,7 +231,7 @@ console.log(rest);
 
 ---
 
-### Spread Operator 
+### Spread Operator
 
 The spread operator has the same syntax as the rest operator but it takes the whole array/object itself instead of just the arguments.
 
