@@ -40,7 +40,7 @@ Recoil is a little simpler. It only has two components: atoms and selectors. Dat
 
 Atoms are units of states. The purpose of the atom is to house our stateful data and allow us to update and subscribe to that data. What this means is that whenever an atom is updated to a new value, the components that are subscribed will re-render and be provided with the updated data. You could begin to see how atoms could replace the use of the `useState()` hook passing down the same data to multiple children from the parents (this is also known as prop drilling).
 
-Selectors are pure functions (a function that has the same return value provided the same input and has no side effects) which either accept atoms or either selectors. Selectors can help us to calculate derived or manipulated data (thusly mitigating the need for a reducer).
+Selectors are pure functions (a function that has the same return value provided the same input and has no side effects) which either accept atoms or selectors. Selectors can help us to calculate derived or manipulated data (thusly mitigating the need for a reducer).
 
 ---
 
@@ -57,7 +57,7 @@ const countState = atom({
 
 You can see here that an atom requires a unique key (generally just the variable name). This key must be globally unique. Atoms also need to be provided a default value.
 
-If we need to read and write an atom from a component, we can make use of the `useRecoilState` hook. It's incredibly similar to the `useState` hook in that it provides us with the valkue itself and a method to set that value.
+If we need to read and write an atom from a component, we can make use of the `useRecoilState` hook. It's incredibly similar to the `useState` hook in that it provides us with the value itself and a method to set that value.
 
 ```js
 function Counter() {
@@ -70,7 +70,7 @@ function Counter() {
 }
 ```
 
-Other components would now also be able to access the current value the `countState` atom and would receive updates and re-renders whenever they happened, regardless of what component updated the value.
+Other components would now also be able to access the current value of the `countState` atom and would receive updates and re-renders whenever they happened, regardless of what component updated the value.
 
 ### How do selectors work?
 
@@ -86,9 +86,9 @@ export const isEvenState = selector({
 )}
 ```
 
-We can see from the above example that we now have a selector which makes use of two other atoms `countState` atom. Whenever the `countState` atom is updated, this selector will rerun and output the result of it's own logic.
+We can see from the above example that we now have a selector which makes use of the `countState` atom. Whenever the `countState` atom is updated, this selector will rerun and output the result of it's own logic.
 
-Selectors don't only accept atoms but can also accept other selectors. This means you could developer quite a functional approach to your state management by breaking down derived state into small selectors that accept each other instead of potentially building a Frankenstein's Monster of a selector when you're dealing with a complex piece of derived state.
+Selectors don't only accept atoms but can also accept other selectors. This means you could develop quite a functional approach to your state management by breaking down derived state into small selectors that accept each other instead of potentially building a Frankenstein's Monster of a selector when you're dealing with a complex piece of derived state.
 
 **Some things to note:**
 
@@ -101,10 +101,10 @@ Selectors don't only accept atoms but can also accept other selectors. This mean
 - `useSetRecoilState` - returns just a setter function for a Recoil atom
 - `useRecoilState` - returns a tuple that mimicks what the `useState` hook does. The first element is the value and the second element is a setter function for that value.
 
-These are the main 3 hooks that I'd guess would be used most commonly. You can explore the other core hooks [here](https://recoiljs.org/docs/api-reference/core/isRecoilValue).
+These are the hooks I would consider the most commonly needed. You can explore the other core hooks [here](https://recoiljs.org/docs/api-reference/core/isRecoilValue).
 
 ---
 
-Recoil doesn't aim to be the only state management tool you use in your apps. React's built in state hooks as well as the Context API will solve a lot of your problems, however, Recoil will help you to solve the rest of the scenarios without comprising the performance of your application.
+Recoil doesn't aim to be the only state management tool you use in your apps. React's built in state hooks as well as the Context API will solve a lot of your problems, however, Recoil will help you to solve the rest of the scenarios without compromising the performance of your application.
 
 If you're wanting to see Recoil in action on a slightly more complex scenario, check out [this](https://github.com/haefele-software/react-recoil-workshop) repo. This repo explores a simple application where users can add teams and add players to those teams. There is an example of how to achieve this using Redux, an example of how to achieve this using Recoil and an empty project with no state management implemented so that you can mess around.
