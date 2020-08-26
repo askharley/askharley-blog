@@ -16,7 +16,7 @@ I personally have a lot of questions about modern web development. Why do we hav
 
 ### Why is JavaScript so popular?
 
-Don't get me wrong, JavaScript is personally my favourite language to write code in but I need to remain object here. Why has this one language taken the world by storm? 
+Don't get me wrong, JavaScript is personally my favourite language to write code in but I need to remain objective here. Why has this one language taken the world by storm? 
 
 The answer is most likely because JavaScript as a language become so much better in comparison to how it used to be. Initially, a lot of tools and technologies were created to make up for JavaScript's shortcomings but now, like a fine wine, JavaScript has matured. This would have promoted more efforts into working with, exploring and expanding one's knowledge of JavaScript.
 
@@ -38,15 +38,17 @@ It's pretty simple actually and can be simply by the infamous, The Notorious B.I
 
 For example, Google wants to build the web applications one way. Facebook wants to build their web applications another way. Google creates Angular. Facebook creates React. Both frameworks achieve the same thing. Both frameworks use the same language. Both frameworks have a legion of developers who have sworn allegiance. Both do some things better or worse than the other. Then Vue comes along and claims to be more progressive than it's competitors and, thusly, the market continues to grow with more options.
 
-I'm all for competition. Competition is what pushes us forward as a species but the great JavaScript Framework war of the 2010s has taken it too far and doesn't seem to be slowing down. We are no longer looking for JavaScript developers in our hiring process. We're looking for a developer with 2 years React experience coupled with Redux, a developer with 3 years Angular 2+ experience that knows NgRx. This is too much.
+I'm all for competition. Competition is what pushes us forward as a species but the great JavaScript Framework war of the 2010s has taken it too far and doesn't seem to be slowing down. We are no longer looking for JavaScript developers in our hiring process. "We're looking for a developer with 2 years React experience coupled with Redux, a developer with 3 years Angular 2+ experience that knows NgRx". This is too much. I'm fully aware that talented developers will be able to translate their skills from one framework to another, however, what of the not-so-talented developers? Hitching your wagon to a single framework is too much of a risk in my opinion.
 
 Not only does every framework have it's own design and architectural patterns but libraries and concepts are now being coupled with that framework. Angular developers are most likely not going to understand the Flux architecture that Redux follows and React developers aren't going to understand Angular's approach to resolvers. Each framework is going deeper and deeper down it's own path and as time passes, the similarities between them begin to thin.
 
-I understand that certain minds will prefer to code in a certain framework. I, for one, am the biggest React fan boy out there. That's probably because I prefer functional code and React encourages writing functional JavaScript. However, the amount of tools, patterns and concepts that I have to learn that only hold water in a React ecosystem is ridiculous.
+I understand that certain minds will prefer to code in a certain framework. I, for one, am the biggest React fanboy out there. That's probably because I prefer functional code and React encourages writing functional JavaScript. However, the amount of tools, patterns and concepts that I have to learn that only hold water in a React ecosystem is ridiculous.
 
-I don't know what the answer is. Maybe it's a completely open source (not owned by a [FAANG](https://en.wikipedia.org/wiki/Big_Tech#FAANG) company) framework? Maybe it's a framework that allows you to write code either in an object-orientated or a functional fashion? Maybe it's time we just give in and leave the title of "Frontend Developer" behind and take the helm of "React Developer". Directly coupling our career and livelihood to the survival of something that is completely outside of our control.
+I don't know what the answer is. Maybe it's a completely open source (not owned by a [FAANG](https://en.wikipedia.org/wiki/Big_Tech#FAANG) company) framework? Maybe it's a framework that allows you to write code either in an object-orientated or a functional fashion? Maybe it's time we just give in and leave the title of "Frontend Developer" behind and take the helm of "React Developer", directly coupling our career and livelihood to the survival of something that is completely outside of our control.
 
 ### How do we go about bundle splitting?
+
+Time to get a little bit more technical.
 
 As any application grows, so does it's bundle. If you're unfamiliar with how SPA (single paged applications) work, your browser downloads the whole application the first time you visit the website. This is an issue because if a user is only accessing the FAQ of your site, they've still had to download every other page that your site has to offer.
 
@@ -74,13 +76,13 @@ SSR will solve some of your problems but it can introduce you to just as many.
 
 ### Why must APIs be so infuriating?
 
-APIs are there to bring the frontend to life. Give us the data we need so that we can show it to the world. Such a pure concept but the execution is nothing short of the [Red Wedding](https://www.youtube.com/watch?v=ZnxvUuSzbMI) from Game of Thrones.
+APIs are there to bring the frontend to life. Give us the data we need so that we can show it to the world. Such a pure concept but the execution is nothing short of the Red Wedding from Game of Thrones.
 
-For example, a REST API that follows the practise of not coupling too many things is going to result in the frontend having to make multiple requests just to display one page. Get me my permissions but also get me a list of users. Oh, also get me my profile data. Duh.
+For example, a REST API that follows the practice of not coupling too many things is going to result in the frontend having to make multiple requests just to display one page. Get me my permissions but also get me a list of users. Oh, also get me my profile data. Duh.
 
 This is an incredibly annoying and tedious process, yet, I understand and accept it. We can't put all that data into one endpoint because then we're crossing concerns and mixing data objects together on our backend. I understand this and so I make multiple API calls to cater for the backend's philosophies. But what if my frontend philosophy is to not have to make 3 API calls before I'm allowed to even render anything to the user? Will the backend surrender to my frontend's will?
 
-There is a disjoint between backend/APIs and frontend applications. Each have constructed their own way of doing things, best practises and so on. This is done without the other in mind. A backend without a frontend makes for a nearly impossible user experience that would only allow for users who have a good understanding of HTTP requests to be able to make use of the system. A frontend without a backend is just as pointless as a static website without any content.
+There is a disjoint between backend/APIs and frontend applications. Each have constructed their own way of doing things, best practices and so on. This is done without the other in mind. A backend without a frontend makes for a nearly impossible user experience that would only allow for users who have a good understanding of HTTP requests to be able to make use of the system. A frontend without a backend is just as pointless as a static website without any content.
 
 We have the convention of using JSON so that our frontend doesn't have to care about what language the API it's making a request to uses. But what if it should? What if writing backend code and frontend code to not only work together but to also make each other better, without one compromising for the other, was possible? I'm not just talking about using the same language (JavaScript) to write your backend (Node) and your frontend (React, Angular, Vue, etc). While enjoyable, that doesn't exactly solve the problems of the two ends of our solutions making each other better without making compromises. In a perfect world...
 
@@ -92,4 +94,4 @@ If we all still have jobs 10 years from now, this is how I see it: There will be
 
 ---
 
-This post may seem pessimistic or negative which is hardly the case. We need to challenge and question everything. Questioning one of the most important inventions in human history and how we continue to build that invention is probably one of the greatest questions we can ask ourselves as web developers.
+This post may seem pessimistic or negative, but that's not the case. I simply believe that we need to challenge and question everything. Questioning one of the most important inventions in human history and how we continue to build that invention is probably one of the greatest questions we can ask ourselves as web developers.
