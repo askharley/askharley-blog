@@ -10,7 +10,7 @@ tags: ["web development"]
 
 <sub><sup>Photo by Markus Spiske on Unsplash.</sup></sub>
 
-I personally have a lot of questions about modern web development. Why do we have so many JavaScript frameworks? Where is the web going to be 10 years from now? This article doesn't serve to answer these questions but rather explore and dive deeper into the abyss.
+I personally have a lot of questions about modern web development. Why do we have so many JavaScript frameworks? Where is the web going to be 10 years from now? This article doesn't serve to answer these questions but to rather explore and dive deeper into the abyss.
 
 ---
 
@@ -18,7 +18,7 @@ I personally have a lot of questions about modern web development. Why do we hav
 
 Don't get me wrong, JavaScript is personally my favourite language to write code in but I need to remain objective here. Why has this one language taken the world by storm? 
 
-The answer is most likely because JavaScript as a language become so much better in comparison to how it used to be. Initially, a lot of tools and technologies were created to make up for JavaScript's shortcomings but now, like a fine wine, JavaScript has matured. This would have promoted more efforts into working with, exploring and expanding one's knowledge of JavaScript.
+The answer is most likely because JavaScript as a language has become so much better in comparison to how it used to be. Initially, a lot of tools and technologies were created to make up for JavaScript's shortcomings but now, like a fine wine, JavaScript has matured. This would have promoted more efforts into working with, exploring and expanding one's knowledge of JavaScript.
 
 Then, we can't ignore that JavaScript is the only language that every browser supports. Let's add the fact that JavaScript can be rendered on client or server side. To the experienced developer, those are reasons enough to use this language but what about new developers?
 
@@ -26,7 +26,7 @@ New developers are far less likely to think of rendering or browser support so w
 
 Then what about developers who are wanting to explore concepts or programming paradigms? Object orientated vs functional? Imperative vs declarative?
 
-JavaScript is a minimalistic languages and does not tie you into anything. Languages like C# expect you to go ahead and write object orientated code. Languages like Scala are begging for pure functions and no side effects. JavaScript is agnostic (borderline atheist) and allows you to write the code in whatever convention, approach, paradigm or style you wish. This is a big draw for developers who are starting to expand their knowledge.
+JavaScript is a minimalistic language and does not tie you into anything. Languages like C# expect you to go ahead and write object orientated code. Languages like Scala are begging for pure functions and no side effects. JavaScript is agnostic (borderline atheist) and allows you to write the code in whatever convention, approach, paradigm or style you wish. This is a big draw for developers who are starting to expand their knowledge.
 
 All of these factors resulted in millions of developers picking up the language and making it the popular girl at the dance.
 
@@ -34,9 +34,9 @@ All of these factors resulted in millions of developers picking up the language 
 
 Long gone are the days of some PHP/Rails/whatever to generate your HTML with some jQuery thrown in the mix. Now we have a plethora of JavaScript libraries to choose from. React, Angular, Vue, Knockout and the list goes on. Every corner has a new framework (or library with it's own ecosystem, such as React) claiming to solve some problems better than other frameworks. Why do we have such a saturated market?
 
-It's pretty simple actually and can be simply by the infamous, The Notorious B.I.G: Mo Money Mo Problems. To translate this for those who aren't educated on the late 90's rap scene, the increase in JavaScript's popularity meant that more people were using it which would result in more opinions/arguments about how to achieve certain things.
+It's pretty simple actually and can be put simply by the infamous, The Notorious B.I.G: Mo Money Mo Problems. To translate this for those who aren't educated on the late 90's rap scene, the increase in JavaScript's popularity meant that more people were using it which would result in more opinions/arguments about how to achieve certain things.
 
-For example, Google wants to build the web applications one way. Facebook wants to build their web applications another way. Google creates Angular. Facebook creates React. Both frameworks achieve the same thing. Both frameworks use the same language. Both frameworks have a legion of developers who have sworn allegiance. Both do some things better or worse than the other. Then Vue comes along and claims to be more progressive than it's competitors and, thusly, the market continues to grow with more options.
+For example, Google wants to build their web applications one way. Facebook wants to build their web applications another way. Google creates Angular. Facebook creates React. Both frameworks achieve the same thing. Both frameworks use the same language. Both frameworks have a legion of developers who have sworn allegiance. Both do some things better or worse than the other. Then Vue comes along and claims to be more progressive than it's competitors and, thusly, the market continues to grow with more options.
 
 I'm all for competition. Competition is what pushes us forward as a species but the great JavaScript Framework war of the 2010s has taken it too far and doesn't seem to be slowing down. We are no longer looking for JavaScript developers in our hiring process. "We're looking for a developer with 2 years React experience coupled with Redux, a developer with 3 years Angular 2+ experience that knows NgRx". This is too much. I'm fully aware that talented developers will be able to translate their skills from one framework to another, however, what of the not-so-talented developers? Hitching your wagon to a single framework is too much of a risk in my opinion.
 
@@ -56,7 +56,7 @@ Bundle splitting helps solve this by breaking your code into multiple bundles th
 
 The next problem is that you're going to make changes and update your web application. This means that the bundle has changed and potentially the index file that was tracking the lazy loading of your modules has also been changed. This means that users with an outdated bundle will be viewing an outdated version of your website.
 
-In my opinion, the best solution to do is create a system that alerts the user that their version of the site is out of date. [react-hook-form](https://react-hook-form.com/) does this quite nicely by presenting the user with an alert, informing them to update to the latest version.
+In my opinion, the best solution is to create a system that alerts the user that their version of the site is out of date. [react-hook-form](https://react-hook-form.com/) does this quite nicely by presenting the user with an alert, informing them to update to the latest version.
 
 ![react-hook-form-alert](https://i.ibb.co/WDQ7KbJ/react-hook-form-2.png)
 
@@ -64,13 +64,13 @@ Even if this process is done tastefully, it's still a very off-putting experienc
 
 ### Is Server-Side Rendering worth it?
 
-Client side rendering looks something like that: the user navigates to a page which will initially be blank. That page will then be filled with JavaScript. This isn't exactly the best idea because regardless of how fast a client's machine is, the page is blank at some point.
+Client side rendering looks something like this: the user navigates to a page which will initially be blank. That page will then be filled with JavaScript. This isn't exactly the best idea because regardless of how fast a client's machine is, the page is blank at some point.
 
 Server-side rendering allows us to run JavaScript frontend code on the backend, which will then fill out the page with HTML. The user loads that page, which has some pre-rendered content and then the JavaScript loads which will make the page interactive. Better, worse? There isn't an initially blank page so maybe it's better? Not exactly.
 
 Using server-side rendering means that your initial render actually provides the user with a dead page. You've now gone and created a [Time To Interactive](https://web.dev/interactive/) metric which [Lighthouse](https://developers.google.com/web/tools/lighthouse) will deduct points for. What a "dead page" means is that the user will see a "Login" button but there won't be any functionality when that button is clicked until the JavaScript has been loaded in. Now you've created more problems. You either have to forget about some interactive elements or spend a lot of time making sure your JavaScript loads before any user would be able to click a button. That doesn't sound like fun work.
 
-SSR also introduces you to another problem: how are you going to go about authenticating your user? You're going to have to forward your cookies, tokens etc to the API for authorization/authentication. This means you could never cache the result either because what the server is going to render is dependent on the user's permissions. On top of this, you need to make a request to the server every time the use requests a new page.
+SSR also introduces you to another problem: how are you going to go about authenticating your user? You're going to have to forward your cookies, tokens etc to the API for authorization/authentication. This means you could never cache the result either because what the server is going to render is dependent on the user's permissions. On top of this, you need to make a request to the server every time the user requests a new page.
 
 SSR will solve some of your problems but it can introduce you to just as many.
 
@@ -84,13 +84,13 @@ This is an incredibly annoying and tedious process, yet, I understand and accept
 
 There is a disjoint between backend/APIs and frontend applications. Each have constructed their own way of doing things, best practices and so on. This is done without the other in mind. A backend without a frontend makes for a nearly impossible user experience that would only allow for users who have a good understanding of HTTP requests to be able to make use of the system. A frontend without a backend is just as pointless as a static website without any content.
 
-We have the convention of using JSON so that our frontend doesn't have to care about what language the API it's making a request to uses. But what if it should? What if writing backend code and frontend code to not only work together but to also make each other better, without one compromising for the other, was possible? I'm not just talking about using the same language (JavaScript) to write your backend (Node) and your frontend (React, Angular, Vue, etc). While enjoyable, that doesn't exactly solve the problems of the two ends of our solutions making each other better without making compromises. In a perfect world...
+We have the convention of using JSON so that our frontend doesn't have to care about what language the API is using. But what if it should? What if writing backend code and frontend code to not only work together but to also make each other better, without one compromising for the other, was possible? I'm not just talking about using the same language (JavaScript) to write your backend (Node) and your frontend (React, Angular, Vue, etc). While enjoyable, that doesn't exactly solve the problems of the two ends of our solutions making each other better without making compromises. In a perfect world...
 
 ### Where will the web be 10 years from now?
 
-I'm not even going to pretend to know the answer to this but I'll give it a go. The enhancements of sites like [Wix](https://www.wix.com/) scare me because potential client could have everything then they need right there, in a nice drag-and-drop UI. Potential clients that want to make use of my deep React knowledge could eventually replace me with something like [GPT-3](https://en.wikipedia.org/wiki/GPT-3) if it gets to the point that it could seamlessly integrate, build and improve upon your code.
+I'm not even going to pretend to know the answer to this but I'll give it a go. The enhancements of sites like [Wix](https://www.wix.com/) scare me because potential client could have everything that they need right there, in a nice drag-and-drop UI. Potential clients that want to make use of my deep React knowledge could eventually replace me with something like [GPT-3](https://en.wikipedia.org/wiki/GPT-3) if it gets to the point that it could seamlessly integrate, build and improve upon your code.
 
-If we all still have jobs 10 years from now, this is how I see it: There will be a need for less developers than currently because automation, maintenance and general development time will be made easier by new tools. JavaScript will continue to be the most popular languages unless we somehow stumble into a new internet that uses new browsers. Only 1 or 2 of the big 3 (React, Angular, Vue) will survive. The reason being because the sheer amount of extra things you need to know in order to be proficient at one will cause companies to only starting developing in one framework. When this happens, it could quickly cause an increase in popularity of one framework and we'll see what happened with JavaScript all over again. I'm personally looking forward to this and my money is on React.
+If we all still have jobs 10 years from now, this is how I see it: There will be a need for less developers than currently because of automation, maintenance and general development time will be made easier by new tools. JavaScript will continue to be the most popular languages unless we somehow stumble into a new internet that uses new browsers. Only 1 or 2 of the big 3 (React, Angular, Vue) will survive. The reason being because the sheer amount of extra things you need to know in order to be proficient at one will cause companies to only start developing in one framework. When this happens, it could quickly cause an increase in popularity of one framework and we'll see what happened with JavaScript all over again. I'm personally looking forward to this and my money is on React.
 
 ---
 
