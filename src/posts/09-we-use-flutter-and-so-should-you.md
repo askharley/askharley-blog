@@ -22,9 +22,9 @@ Flutter is a UI SDK (software development kit) created and maintained by Google.
 
 ### What is Dart? 
 
-Dart is a programming language made by Google that is used to build Flutter applications. Dart boasts itself to be optimized for building UIs, however, Dart also allows for developers to build HTTP clients and services. This means that you could build a server using Dart as well as a have a single Dart code base that can build a whole host of applications on various platforms.
+Dart is a programming language made by Google that is used to build Flutter applications. Dart boasts itself to be optimized for building UIs, however, Dart also allows for developers to build HTTP clients and services. This means that you could build a server using Dart as well as a single Dart code base that can build a whole host of applications on various platforms.
 
-Some may find it frustrating that they would have to learn a new language in order to make use of Flutter but I'm here to tell you that picking up Dart is far easier than you think. Dart was designed to feel familiar to web developers. What this means is that the syntax and conventions in Dart were heavily inspired by JavaScript. Let's take a bit of language tour to see how simple Dart actually is.
+Some may find it frustrating that they would have to learn a new language in order to make use of Flutter but I'm here to tell you that picking up Dart is far easier than you think. Dart was designed to feel familiar to web developers. What this means is that the syntax and conventions in Dart were heavily inspired by JavaScript. Let's take a bit of a language tour to see how simple Dart actually is.
 
 #### Variables
 
@@ -108,7 +108,7 @@ class Person {
 
 Flutter allows us to build native applications from a single code base. This is a massive pro if you're needing to build a beautiful, scalable application on both iOS and Android but don't have the funding or means to build two separate native applications.
 
-Flutter also make it incredilby simple to either run an emulator locally on your machine or to deploy it to your phone. Other tools require a large amount of setup or require you to learn a CLI while Flutter is close to offering a "plug and play" like feeling to getting your applications onto your devices.
+Flutter also make it incredibly simple to either run an emulator locally on your machine or to deploy it to your phone. Other tools require a large amount of setup or require you to learn a CLI while Flutter is close to offering a "plug and play" like feeling to getting your applications onto your devices.
 
 Flutter also has built a very large, active and positive community. There are tons of articles, videos and answered questions about Flutter that will allow you to learn and grow rapidly.
 
@@ -136,11 +136,11 @@ Another amazing thing about Flutter is that it's designed stateful widgets to ha
 
 ### What makes Flutter better than something like React Native or Ionic?
 
-It's worth mentioning how incredibly easy to create your first app and get it onto your phone right away. Other frameworks do require more setup to get to that point.
+It's worth mentioning how incredibly easy it is to create your first Flutter app and get it onto your phone right away. Other frameworks require more setup to get to that point and can often cause headaches with their complexity.
 
 Flutter also boasts an incredibly powerful [hot-reload](https://flutter.dev/docs/development/tools/hot-reload) functionality. Most SDKs also offer this but I've personally experienced great inconsistencies when dealing with React Native or Ionic's hot-reload. This ultimately improves the development time because you can very quickly view your changes to the code base without having to constantly reserve the application.
 
-Flutter breaks the shackles introduced by the "JavaScript bridge" and is actually creating an application, not just an app wrapper over a web view (I'm looking at you Ionic). React Native does do a good job of building artifacts by making use of avarious compilers to make sense of the JavaScript code, however, these applications never really feel native. Flutter creates applications that are basically native and they feel that way. Flutter compiles the Dart code into native ARM machine code which gives the apps a native level of performance.
+Flutter breaks the shackles introduced by the "JavaScript bridge" and is actually creating an application, not just an app wrapper over a web view (I'm looking at you Ionic). React Native does do a good job of building artifacts by making use of various compilers to make sense of the JavaScript code, however, these applications never really feel native. Flutter creates applications that are basically native and they feel that way. Flutter compiles the Dart code into native ARM machine code which gives the apps a native level of performance.
 
 ---
 
