@@ -1,6 +1,6 @@
 ---
 title: "Imperative vs Declarative Programming"
-date: "2020-04-28"
+date: "2021-03-03"
 path: "/imperative-vs-declarative-programming"
 coverImage: "../images/02-imperative-vs-declarative-programming.jpg"
 author: "Harley Ferguson"
@@ -22,7 +22,7 @@ Okay so what do these definitions actually mean and how are they different? Let'
 
 ---
 
-If I had a butler robot and I wanted it to make me a sandwich, imperatively I'd have to tell it this:
+If I had a robot butler and I wanted it to make me a sandwich, imperatively I'd have to tell it this:
 
 ```
 1. Go to the kitchen
@@ -39,7 +39,7 @@ To do the same thing declaratively would look like this:
 Hey Mr Robot, I feel like a peanut butter sandwich.
 ```
 
-Quite the difference, right? Imperatively means that we have to tell our butler robot (the program) every step it needs to do in order to complete the task. Doing the same thing means that we just declare our final state (having a sandwich) and we don't really care how it gets to that point.
+Quite the difference, right? Imperatively means that we have to tell our robot butler (the program) every step it needs to do in order to complete the task. Doing the same thing declaratively means that we just declare our final state (having a sandwich) and we don't really care how it gets to that point.
 
 This means that declarative programming is generally simpler to code because it's far more readable, doesn't require concerning yourself with lower level logic and allows use to define the solution and not each procedure.
 
@@ -86,7 +86,7 @@ foreach(var game in games)
 
 ---
 
-Okay so why has "declarative" programming become more popular in recent years? Well that would be because of React.
+Okay so why has declarative programming become more popular in recent years? Well that would be because of React.
 
 React has heavily promoted itself as declarative. The reason for this is because alternative frameworks (like Angular) or libraries (like jQuery) are imperative. This may leave you wanting a code example but the difference between React and Angular is a blog post on it's own.
 
