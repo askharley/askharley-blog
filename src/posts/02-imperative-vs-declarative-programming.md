@@ -41,6 +41,8 @@ Hey Mr Robot, I feel like a peanut butter sandwich.
 
 Quite the difference, right? Imperatively means that we have to tell our robot butler (the program) every step it needs to do in order to complete the task. Doing the same thing declaratively means that we just declare our final state (having a sandwich) and we don't really care how it gets to that point.
 
+We can now see how declarative programming is essentially just stating what you want and then the runtime system has the responsibility of making that happen.
+
 This means that declarative programming is generally simpler to code because it's far more readable, doesn't require concerning yourself with lower level logic and allows use to define the solution and not each procedure.
 
 ---
@@ -88,7 +90,7 @@ foreach(var game in games)
 
 Okay so why has declarative programming become more popular in recent years? Well that would be because of React.
 
-React has heavily promoted itself as declarative. The reason for this is because alternative frameworks (like Angular) or libraries (like jQuery) are imperative. This may leave you wanting a code example but the difference between React and Angular is a blog post on it's own.
+React has heavily promoted itself as declarative. The reason for this is because alternative frameworks (like Angular) or libraries (like jQuery) are imperative. React allows us to write the code that we want while it worries about taking that code and performing any steps that are required on the JavaScript/DOM side of things. This may leave you wanting a code example but the difference between React and Angular is a blog post on it's own.
 
 Writing less code with regards to your UI rendering does come at a cost in React though. You're going to need to now understand state and how to manage it so that you can effectively render your UI.
 
