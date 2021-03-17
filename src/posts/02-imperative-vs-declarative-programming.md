@@ -13,7 +13,7 @@ tags: ["programming-paradigms"]
 The term 'declarative programming' has regained popularity in the recent years. But what exactly is it and how does it compare to imperative programming?
 
 Wikipedia defines imperative programming as:
->  A programming paradigm that uses statements that change a program's state. An imperative programing consists of commands for the computer to perform.
+>  A programming paradigm that uses statements that change a program's state. An imperative programming consists of commands for the computer to perform.
 
 While declarative programming is defined as:
 > A style of building the structure and elements of computer programs—that expresses the logic of a computation without describing its control flow.
@@ -71,7 +71,7 @@ C# allows for developers to write both imperatively and declaratively.
 var results = games.Where(game => game.Series == "God of War")
 ```
 
-The above code is an example of how, using Linq, we can write declarative code. All we are asking for us a list of games that a part of the "God of War" series but we don't care how the program gives us that data. That's Linq's problem.
+The above code is an example of how, using Linq, we can write declarative code. All we are asking for is a list of games that are a part of the "God of War" series but we don't care how the program gives us that data. That's Linq's problem.
 
 Achieving the same functionality imperatively would look like this:
 
