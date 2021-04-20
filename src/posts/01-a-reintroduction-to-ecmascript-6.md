@@ -1,6 +1,6 @@
 ---
 title: "A Reintroduction to ECMAScript 6"
-date: "2020-04-20"
+date: "2021-04-18"
 path: "/a-reintroduction-to-ecmascript-6"
 coverImage: "../images/01-a-reintroduction-to-ecmascript-6.jpg"
 author: "Harley Ferguson"
