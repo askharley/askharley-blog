@@ -140,7 +140,7 @@ console.log(hobbits.map(hobbit => hobbit.length));
 
 If you were paying attention, you would have noticed how I was returning the greeting in our `greeter` method. It looked like this:
 ```
-greeter = (name, surname) => console.log("Hello " + name + " " + surname + ".")
+const greeter = (name, surname) => console.log("Hello " + name + " " + surname + ".")
 greeter("John", "Cena");
 // --> "Hello John Cena."
 ```
@@ -148,7 +148,7 @@ greeter("John", "Cena");
 Template literals save us from writing `+` over and over again. Let's refactor our above code into something much cooler:
 
 ```
-greeter = (name, surname) => console.log(`Hello ${name} ${surname}.`)
+const greeter = (name, surname) => console.log(`Hello ${name} ${surname}.`)
 greeter("The", "Rock");
 // --> "Hello The Rock."
 ```
@@ -161,14 +161,14 @@ Finally, right? I'm sure we are all aware of why this is awesome. Not having `un
 
 ```
 // Without default parameter
-greeter = (name, surname) => console.log(`Hello ${name} ${surname}.`)
+const greeter = (name, surname) => console.log(`Hello ${name} ${surname}.`)
 greeter("Brad")
 // --> "Hello Brad undefined
 ```
 
 ```
 // With default parameter
-greeter = (name = "John", surname = "Doe") => console.log(`Hello ${name} ${surname}.`)
+const greeter = (name = "John", surname = "Doe") => console.log(`Hello ${name} ${surname}.`)
 greeter("Brad")
 // --> "Hello Brad Doe"
 ```
@@ -236,31 +236,31 @@ console.log(rest);
 The spread operator has the same syntax as the rest operator but it takes the whole array/object itself instead of just the arguments.
 
 ```
-numbers = [1, 2, 3];
-sum = (a, b, c) => a + b + c;
-total = sum(...numbers);
+const numbers = [1, 2, 3];
+const sum = (a, b, c) => a + b + c;
+const total = sum(...numbers);
 console.log(total);
 // --> 6
 ```
 
 The spread operator can also be use effectively when copying parts of objects.
 ```
-originalPerson = {
+const originalPerson = {
   name: "Billy",
   surname: "Joel",
-  age: 70
+  age: 71
 };
 
-newPerson = {
+const newPerson = {
   ...originalPerson,
   surname: "Eilish",
-  age: 17
+  age: 18
 }
 
 console.log(originalPerson);
-// --> {name: "Billy", surname: "Joel", age: 70}
+// --> {name: "Billy", surname: "Joel", age: 71}
 console.log(newPerson);
-// --> {name: "Billy", surname: "Eilish", age: 17}
+// --> {name: "Billy", surname: "Eilish", age: 18}
 ```
 
 The spread will overwrite whatever properties are specifided but otherwise take all of the properties as they exist on the original object.
@@ -273,7 +273,7 @@ If you're integrating with an API, promises are your best friend. They allow dev
 
 Promises are made up of a `resolve` and a `reject`. If we wrote our own to just return a subtle Star Wars quote, it'd look like this:
 ```
-quote = () => {
+const quote = () => {
     return new Promise((resolve, reject) => {
         resolve("Why hello there.")
     })
