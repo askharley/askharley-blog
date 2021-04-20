@@ -4,7 +4,7 @@ date: "2021-04-18"
 path: "/a-reintroduction-to-ecmascript-6"
 coverImage: "../images/01-a-reintroduction-to-ecmascript-6.jpg"
 author: "Harley Ferguson"
-excerpt: "ES6 may be nearly 5 years old but I still see tons of code that isn't making use of the full ES6 awesomeness. Let's have a quick recap so we can start writing nicer code again."
+excerpt: "ES6 may be nearly 6 years old but I still see tons of code that isn't making use of the full ES6 awesomeness. Let's have a quick recap so we can start writing nicer code again."
 tags: ["ecmascript6", "javascript"]
 ---
 
