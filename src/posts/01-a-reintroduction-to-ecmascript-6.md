@@ -10,7 +10,7 @@ tags: ["ecmascript6", "javascript"]
 
 <sub><sup>Photo by Adam Solomon on Unsplash.</sup></sub>
 
-ES6 may be nearly 5 years old but I still see tons of code that isn't making use of the full ES6 awesomeness. Let's have a quick reintroduction so we can start writing nicer code again.
+ES6 may be nearly 6 years old but I still see tons of code that isn't making use of the full ES6 awesomeness. Let's have a quick reintroduction so we can start writing nicer code again.
 
 ECMAScript 6 (or ES6 for short), is the sixth iteration in the JavaScript standardization. If you have no idea what I'm talking about, the TL;DR is that ES and all of it's versions aim to standize the way we write JavaScript by providing a scripting-language specification.
 
