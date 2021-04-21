@@ -108,7 +108,7 @@ We can actually make this 1 line as arrow functions implicitly return if they're
 greeter = name => "Hello " + name;
 ```
 
-An arrow function that takes in multiple (or no) parameters would make use of parenthesises.
+An arrow function that takes in multiple (or no) parameters would make use of parentheses.
 ```
 greeter = (name, surname) => "Hello " + name + " " + surname + "."
 ```
@@ -243,7 +243,7 @@ console.log(total);
 // --> 6
 ```
 
-The spread operator can also be use effectively when copying parts of objects.
+The spread operator can also be used effectively when copying parts of objects.
 ```
 const originalPerson = {
   name: "Billy",
