@@ -12,7 +12,7 @@ tags: ["ecmascript6", "javascript"]
 
 ES6 may be nearly 6 years old but I still see tons of code that isn't making use of the full ES6 awesomeness. Let's have a quick reintroduction so we can start writing nicer code again.
 
-ECMAScript 6 (or ES6 for short), is the sixth iteration in the JavaScript standardization. If you have no idea what I'm talking about, the TL;DR is that ES and all of it's versions aim to standize the way we write JavaScript by providing a scripting-language specification.
+ECMAScript 6 (or ES6 for short), is the sixth iteration in the JavaScript standardization. If you have no idea what I'm talking about, the TL;DR is that ES and all of its versions aim to standardize the way we write JavaScript by providing a scripting-language specification.
 
 Now that you know what it is, let's start diving into the main differences between ES6 and it's previous version.
 
@@ -22,7 +22,7 @@ Now that you know what it is, let's start diving into the main differences betwe
 
 These are two new keywords that are probably going to fully replace your use of the `var` keyword.
 
-Creating a variable with `const` means that it cannot be reassigned and is immuatble (except when it is used with objects but that's another blog post).
+Creating a variable with `const` means that it cannot be reassigned and is immutable (except when it is used with objects but that's another blog post).
 
 Trying to reassign the value of a `const` will actually throw an error.
 
@@ -320,7 +320,7 @@ import {greeter, farewell} from './interactions';
 
 ### Classes
 
-Last but not least, we have classes. Classes are the building block for object orietated programming and help encapsule our code. ES6 introduces all the normal bells and whistles that comes with classes such as instantiation, constructors, inheritance etc.
+Last but not least, we have classes. Classes are the building block for object orientated programming and help encapusulate our code. ES6 introduces all the normal bells and whistles that comes with classes such as instantiation, constructors, inheritance etc.
 
 ```
 // Parent class
