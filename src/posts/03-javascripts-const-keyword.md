@@ -1,6 +1,6 @@
 ---
 title: "JavaScript's const keyword"
-date: "2020-05-02"
+date: "2021-05-02"
 path: "/javascripts-const-keyword"
 coverImage: "../images/03-javascripts-const-keyword.jpg"
 author: "Harley Ferguson"
