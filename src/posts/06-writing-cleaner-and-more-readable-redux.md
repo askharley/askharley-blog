@@ -1,6 +1,6 @@
 ---
 title: "Writing Cleaner & More Readable Redux"
-date: "2021-05-10"
+date: "2021-07-03"
 path: "/writing-cleaner-and-more-readable-redux"
 coverImage: "../images/06-writing-cleaner-and-more-readable-redux.jpg"
 author: "Harley Ferguson"
