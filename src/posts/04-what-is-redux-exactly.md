@@ -1,6 +1,6 @@
 ---
 title: "What is Redux exactly?"
-date: "2021-05-08"
+date: "2021-06-08"
 path: "/what-is-redux-exactly"
 coverImage: "../images/04-what-is-redux-exactly.jpg"
 author: "Harley Ferguson"
