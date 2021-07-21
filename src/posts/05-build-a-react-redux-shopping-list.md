@@ -1,6 +1,6 @@
 ---
 title: "Build a React-Redux Shopping List App"
-date: "2021-05-09"
+date: "2021-06-19"
 path: "/build-a-react-redux-shopping-list-app"
 coverImage: "../images/05-build-a-react-redux-shopping-list-app.jpg"
 author: "Harley Ferguson"
