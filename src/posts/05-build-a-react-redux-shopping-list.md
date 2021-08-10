@@ -54,7 +54,7 @@ export const actionCreators = {
 };
 ```
 
-This is how are action creators must look. We're following the [FSA](https://github.com/redux-utilities/flux-standard-action) model that we discussed in the previous blog post. We need four (one for each manipulation of the store we need to perform). Notice how the first 3 all take in a payload. That's because they'll need to take in something like the `value` of the shopping item text or an `id` of the item to either mark it as in the basket or remove it from the list. The reason `clearItems` doesn't need any data is because all we'll need to do there is set the array in our store back to an empty array. Therefore, we don't need to pass any data through.
+This is how our action creators must look. We're following the [FSA](https://github.com/redux-utilities/flux-standard-action) model that we discussed in the previous blog post. We need four (one for each manipulation of the store we need to perform). Notice how the first 3 all take in a payload. That's because they'll need to take in something like the `value` of the shopping item text or an `id` of the item to either mark it as in the basket or remove it from the list. The reason `clearItems` doesn't need any data is because all we'll need to do there is set the array in our store back to an empty array. Therefore, we don't need to pass any data through.
 
 --- 
 
@@ -359,7 +359,7 @@ Both `addItemToBasket` and `removeItemFromList` both take in the index of the se
 
 Now that we have everything we need (action creators, a reducer to handle our actions and components to dispatch actions), we need to setup our store so that our application can make use of Redux. You'll need to locate our `index.js` file and make some simple changes there.
 
-You'll need to import `creatStore` from the `redux` library as well as `Provider` from the `react-redux` library. We'll use `createStore` to generate a store from the reducer we created. Your index should look something like this:
+You'll need to import `createStore` from the `redux` library as well as `Provider` from the `react-redux` library. We'll use `createStore` to generate a store from the reducer we created. Your index should look something like this:
 
 ```js
 import React from "react";
